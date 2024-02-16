@@ -1,4 +1,4 @@
-# Projeto-Criando a Interface do Netflix
+# Projeto-Criando uma Pokestop
 
 Este projeto teve como objetivo, criar uma Pokestop.
 As tecnologias que foram usadas são:
