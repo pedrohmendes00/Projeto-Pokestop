@@ -22,6 +22,7 @@ a {
 body {
   font-family: var(--font-family);
   font-size: var(--font-size);
+  background-color: var(--gray-100);
 }
 
 .container {
@@ -39,12 +40,17 @@ header {
 }
 
 .pokemon-logo {
-  width: 250px;
+  width: 300px;
 }
 
 /* ---- POKEBOLA ----*/
-.pokebola-image {
+
+.pokebola {
   width: 250px;
+}
+
+.pokebola-image {
+  width: 100%;
   cursor: pointer;
   filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5));
 }
@@ -73,6 +79,7 @@ header {
 }
 
 /* ---- POKESTOP ----*/
+
 .pokestop {
   display: flex;
   align-items: center;
@@ -84,6 +91,7 @@ header {
 }
 
 /* ---- CARD POKEMON ----*/
+
 .pokemon {
   display: flex;
   align-items: center;
@@ -91,6 +99,12 @@ header {
   flex-wrap: wrap;
   gap: 1rem;
   background: linear-gradient(45deg, #ffeb3b, #ff9800);
+  color: var(--gray-900);
+  padding: 1rem;
+  border-radius: 15px;
+  width: 500px;
+  max-width: 100%;
+  filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5));
 }
 
 .pokemon-wrapperImage {
@@ -98,18 +112,38 @@ header {
   height: 250px;
   border-radius: 50%;
   background-color: var(--gray-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon-image {
+  width: 100%;
+  filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5));
+}
+
+.pokemon-name {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.pokemon-abilities {
+  text-transform: capitalize;
+  margin-left: 18px;
+
 }
 
 /* ---- FOOTER ----*/
+
 footer {
   height: 52px;
   background-color: var(--gray-900);
   color: var(--white-900);
   text-align: center;
   padding: 1rem 0;
+  text-transform: uppercase;
 }
 
 footer a {
-  text-decoration: none;
-  color: lightseagreen;
+  color: #e7d9d9;
 }
