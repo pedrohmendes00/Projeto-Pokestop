@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --font-size: 16px;
+  --gray-100: #efefef;
+  --gray-900: #25252b;
+  --white-900: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +17,99 @@
 
 a {
   color: inherit;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  padding: 0 2rem;
+  margin: auto;
+}
+
+/* ---- HEADER ----*/
+header {
+  background-color: var(--gray-900);
+  text-align: center;
+  height: 8rem;
+}
+
+.pokemon-logo {
+  width: 250px;
+}
+
+/* ---- POKEBOLA ----*/
+.pokebola-image {
+  width: 250px;
+  cursor: pointer;
+  filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5));
+}
+
+.pokebola-image:active {
+  animation: shake 0.1s;
+  animation-iteration-count: 200;
+}
+
+@keyframes shake {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 10px;
+  }
+  50% {
+    margin-left: 0;
+  }
+  75% {
+    margin-left: -10px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+/* ---- POKESTOP ----*/
+.pokestop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  min-height: calc(100vh - 8rem - 52px);
+}
+
+/* ---- CARD POKEMON ----*/
+.pokemon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: linear-gradient(45deg, #ffeb3b, #ff9800);
+}
+
+.pokemon-wrapperImage {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: var(--gray-100);
+}
+
+/* ---- FOOTER ----*/
+footer {
+  height: 52px;
+  background-color: var(--gray-900);
+  color: var(--white-900);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: lightseagreen;
 }
